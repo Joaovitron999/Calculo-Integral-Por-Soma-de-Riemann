@@ -1,1 +1,1 @@
-# Clculo-Integral-Por-Soma-de-Riemann
+# Calculo-Integral-Por-Soma-de-Riemann
