@@ -16,7 +16,7 @@ int main() {
   int tipoCalc = 0;
 
   // Entradas
-  /*
+  
   cout << "Me informe os termos da função" << endl;
   cout << "a: " << endl;
   cin >> a;
@@ -38,17 +38,18 @@ int main() {
        << endl;
   cin >> tipoCalc;
 
-  */
+  
   // teste
-
-  a = 0;
-  b = -0.5;
-  c = 3;
-  inicioInterv = 2;
-  fimInterv = 14;
-  n = 1000000000;
-  tipoCalc = 0;
-
+  /*
+  a = 1;
+  b = -2;
+  c = 0;
+  inicioInterv = 0;
+  fimInterv = 3;
+  // n = 6;
+  n = 6;
+  tipoCalc = 1;
+  */
   // Calculo
 
   result = 0;
@@ -57,6 +58,11 @@ int main() {
   if (tipoCalc == 0) { // Soma á esquerda
     for (int i = 1; i <= n; i++) {
       double ci = inicioInterv + (i - 1) * deltaX;
+      result += (f(a, b, c, ci) * deltaX);
+    }
+  } else if (tipoCalc == 1) {
+    for (int i = 1; i <= n; i++) {
+      double ci = inicioInterv + (i)*deltaX;
       result += (f(a, b, c, ci) * deltaX);
     }
   }
